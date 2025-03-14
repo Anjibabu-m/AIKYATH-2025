@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIKYATH 2K25 - College Fest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, rgba(255, 111, 97, 0.8), rgba(255, 204, 0, 0.8), rgba(106, 27, 154, 0.8), rgba(0, 188, 212, 0.8), rgba(76, 175, 80, 0.8));
+            text-align: center;
+            color: #fff;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            border-bottom: 4px solid #ff6f61;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #ff6f61, #ffcc00, #6a1b9a, #00bcd4, #76ff03);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fest-date {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-top: 5px;
+            animation: fadeIn 1.5s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 0;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 5px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        /* Blinking Effect for Events Button */
+        .blink {
+            animation: blinkEffect 1s infinite alternate;
+        }
+
+        @keyframes blinkEffect {
+            from { background: #ffcc00; color: #000; }
+            to { background: rgba(255, 255, 255, 0.2); color: white; }
+        }
+
+        nav ul li:hover {
+            background: #ffcc00;
+        }
+
+        nav ul li:hover a {
+            color: #000;
+        }
+
+        section {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+
+        section h2 {
+            color: #ff6f61;
+            font-size: 1.8em;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #ffcc00;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 12px;
+            background: rgba(51, 51, 51, 0.9);
+            color: white;
+            width: 100%;
+            border-top: 3px solid #ff6f61;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .fest-date {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                display: block;
+                width: 80%;
+                text-align: center;
+                margin: 8px auto;
+            }
+
+            section {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .fest-date {
+                font-size: 0.9rem;
+            }
+
+            nav ul li {
+                width: 90%;
+                font-size: 0.9rem;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AIKYATH 2K25</h1>
+        <p class="fest-date">🎉 March 25, 2025 🎉</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="blink"><a href="events.html">Events</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>About the Fest</h2>
+        <p>This is the annual college fest with exciting events, competitions, and fun activities! Join us for an unforgettable experience filled with music, dance, games, and more.</p>
+    </section>
+</body>
+</html>

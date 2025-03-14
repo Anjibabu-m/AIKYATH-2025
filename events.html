@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fest 2025 - Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, rgba(255, 111, 97, 0.8), rgba(255, 204, 0, 0.8), rgba(106, 27, 154, 0.8), rgba(0, 188, 212, 0.8), rgba(76, 175, 80, 0.8));
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            border-bottom: 4px solid #ff6f61;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            background: linear-gradient(90deg, #ff6f61, #ffcc00, #6a1b9a, #00bcd4, #76ff03);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 0;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 5px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav ul li:hover {
+            background: #ffcc00;
+        }
+
+        nav ul li:hover a {
+            color: #000;
+        }
+
+        .events-list {
+            width: 95%;
+            max-width: 900px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+
+        .event {
+            background: linear-gradient(135deg, #ff6f61, #ffcc00);
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 7px solid #28a745;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            color: white;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .event:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 12px;
+            background: rgba(51, 51, 51, 0.9);
+            color: white;
+            width: 100%;
+            border-top: 3px solid #ff6f61;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.3rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                display: block;
+                width: 80%;
+                text-align: center;
+                margin: 8px auto;
+            }
+
+            .events-list {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul li {
+                width: 90%;
+                font-size: 0.9rem;
+            }
+
+            .event {
+                padding: 12px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Fest 2025 - Events</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="events-list">
+        <h2>Event List</h2>
+        <div class="event">
+            <h3>🧠 TechQuest Arena</h3>
+            <p><strong>Date:</strong> March 24, 2025</p>
+            <p><strong>Venue:</strong> MCA Block</p>
+            <p><strong>Description:</strong> A quiz competition testing technical knowledge, programming, and logic skills.</p>
+        </div>
+        <div class="event">
+            <h3>📊 TechExplore (PPT)</h3>
+            <p><strong>Date:</strong> March 24, 2025</p>
+            <p><strong>Venue:</strong> MCA Block</p>
+            <p><strong>Description:</strong> A PowerPoint presentation competition focusing on innovative tech topics.</p>
+        </div>
+        <div class="event">
+            <h3>💻 Site Sprint</h3>
+            <p><strong>Date:</strong> March 24, 2025</p>
+            <p><strong>Venue:</strong> MCA Block</p>
+            <p><strong>Description:</strong> A web development competition to design and build a functional website.</p>
+        </div>
+        <div class="event">
+            <h3>⚡ Code Clash</h3>
+            <p><strong>Date:</strong> March 24, 2025</p>
+            <p><strong>Venue:</strong> MCA Block</p>
+            <p><strong>Description:</strong> A competitive coding event to test problem-solving and programming efficiency.</p>
+        </div>
+        <div class="event">
+            <h3>🎯 MindMaze</h3>
+            <p><strong>Date:</strong> March 24, 2025</p>
+            <p><strong>Venue:</strong> MCA Block</p>
+            <p><strong>Description:</strong> A two-part event with an aptitude test and mock interview session.</p>
+        </div>
+        <div class="event">
+            <h3>🎨 Poster PalooZa</h3>
+            <p><strong>Date:</strong> March 24, 2025</p>
+            <p><strong>Venue:</strong> MCA Block</p>
+            <p><strong>Description:</strong> A creative poster-making competition on trending tech topics.</p>
+        </div>
+    </section>
+</body>
+</html>
